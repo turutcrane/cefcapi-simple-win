@@ -28,7 +28,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
-    // TODO: ここにコードを挿入してください。
+    // following code copy from https://github.com/cztomczak/cefcapi/blob/master/examples/main_win.c
     // Main args
     cef_main_args_t main_args = {};
     main_args.instance = hInstance;
