@@ -6,8 +6,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>CefPropertySheet</_PropertySheetDisplayName>
+    <IncludePath>$(CefBinaryDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(CefBinaryDir)\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="CefBinaryDir">
       <Value>$(CefBinaryDir)</Value>
