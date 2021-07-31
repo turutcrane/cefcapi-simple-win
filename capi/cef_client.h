@@ -154,6 +154,9 @@ int CEF_CALLBACK on_process_message_received(
         cef_process_id_t source_process,
         struct _cef_process_message_t* message) {
     DEBUG_CALLBACK("on_process_message_received\n");
+    browser->base.release((_cef_base_ref_counted_t*) browser);
+    frame->base.release((_cef_base_ref_counted_t*)frame);
+    message->base.release((_cef_base_ref_counted_t*)message);
     return 0;
 }
 

@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <CefBinaryDir>C:\DiskC\dev\cef_binary\cef_binary_89.0.18+gb36241d+chromium-89.0.4389.114_windows64</CefBinaryDir>
+    <CefBinaryDir>C:\DiskC\dev\cef_binary\cef_binary_91.1.16+gc95b2a1+chromium-91.0.4472.101_windows64</CefBinaryDir>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>CefPropertySheet</_PropertySheetDisplayName>

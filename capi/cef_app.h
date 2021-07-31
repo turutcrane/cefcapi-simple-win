@@ -30,6 +30,7 @@ void CEF_CALLBACK on_before_command_line_processing(
         struct _cef_app_t* self, const cef_string_t* process_type,
         struct _cef_command_line_t* command_line) {
     DEBUG_CALLBACK("on_before_command_line_processing\n");
+    command_line->base.release((_cef_base_ref_counted_t*)command_line);
 }
 
 ///
